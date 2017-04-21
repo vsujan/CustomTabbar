@@ -45,8 +45,8 @@ class CustomTabbarItem: UIView {
     
     index == 2 ? btn.setTitleColor(.white, for: .selected) : btn.setTitleColor(UIColor(colorLiteralRed: 34/255, green: 205/255, blue: 204/255, alpha: 1), for: .selected)
     index == 2 ? btn.setImage(image, for: .selected) : btn.setImage(image, for: .selected)
-    self.addSubview(btn)
     
+    self.addSubview(btn)
     btn.addTarget(self, action: .buttonTapped, for: .touchUpInside)
   }
   

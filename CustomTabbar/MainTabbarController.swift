@@ -12,6 +12,8 @@ class MainTabbarController: UITabBarController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    NotificationCenter.default.addObserver(self, selector: #selector(MainTabbarController.notificationHandler), name: NSNotification.Name(rawValue: "testNotification"), object: nil)
+    
     self.tabBar.isHidden = true
     setup()
     self.selectedIndex = 2
@@ -35,6 +37,10 @@ class MainTabbarController: UITabBarController {
     customTabBar.dataSource = self
     customTabBar.delegate = self
     customTabBar.setup()
+  }
+  
+  func notificationHandler() {
+    print("received notification")
   }
   
 }

@@ -91,11 +91,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGb-bW-irZ">
+                                <rect key="frame" x="164" y="386" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="tapped:" destination="ZoK-Oh-Udj" eventType="touchUpInside" id="5LD-08-ZZi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aWB-hE-waH" firstAttribute="centerX" secondItem="M48-ft-03z" secondAttribute="centerX" id="8eE-Fp-23Z"/>
                             <constraint firstItem="aWB-hE-waH" firstAttribute="centerY" secondItem="M48-ft-03z" secondAttribute="centerY" id="Nxa-Eh-zoy"/>
+                            <constraint firstItem="cGb-bW-irZ" firstAttribute="centerX" secondItem="M48-ft-03z" secondAttribute="centerX" id="Vdp-YI-lgM"/>
+                            <constraint firstItem="cGb-bW-irZ" firstAttribute="top" secondItem="aWB-hE-waH" secondAttribute="bottom" constant="42" id="jaV-wN-1qW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="setting" id="95O-Hi-96l"/>
@@ -192,10 +201,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="favorite" width="42" height="42"/>
-        <image name="location" width="42" height="42"/>
-        <image name="message" width="42" height="42"/>
-        <image name="profile" width="42" height="42"/>
-        <image name="setting" width="42" height="42"/>
+        <image name="favorite" width="25" height="25"/>
+        <image name="location" width="25" height="25"/>
+        <image name="message" width="25" height="25"/>
+        <image name="profile" width="25" height="25"/>
+        <image name="setting" width="25" height="25"/>
     </resources>
 </document>

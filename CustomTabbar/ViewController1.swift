@@ -19,6 +19,10 @@ class ViewController1: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
+  @IBAction func tapped(_ sender: Any) {
+    
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "testNotification"), object: nil)
+  }
   /*
    // MARK: - Navigation
    
